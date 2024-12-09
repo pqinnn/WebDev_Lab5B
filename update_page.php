@@ -32,10 +32,11 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Update User</title>
+        <title>Update Page</title>
     </head>
 
     <body>
+        <h1>Update User</h1>
         <form action="update.php" method="post">
             <label for="matric">Matric:</label>
             <input type="text" name="matric" value="<?php echo $userDetails['matric']; ?>"><br>
