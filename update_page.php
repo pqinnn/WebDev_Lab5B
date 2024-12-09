@@ -37,10 +37,11 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
     <body>
         <form action="update.php" method="post">
-            <input type="hidden" name="matric" value="<?php echo $userDetails['matric']; ?>">
+            <label for="matric">Matric:</label>
+            <input type="text" name="matric" value="<?php echo $userDetails['matric']; ?>"><br>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" value="<?php echo $userDetails['name']; ?>"><br>
-            <label for="role">Role:</label>
+            <label for="role">Access Level:</label>
             <select name="role" id="role" required>
                 <option value="">Please select</option>
                 <option value="lecturer" <?php if ($userDetails['role'] == 'lecturer')
