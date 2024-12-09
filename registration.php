@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($result === true) {
         // Registration successful, redirect to login
         echo '<script>alert("Registration Successful! Redirecting to login page...");</script>';
-        echo '<script>window.location.href="login.php";</script>';
+        echo "<script>window.location.href='login.php';</script>";
     } else {
         // Display error message
         echo '<script>alert("Error: ' . $result . '");</script>';
