@@ -28,7 +28,7 @@ $result = $user->getUsers();
 </head>
 
 <body>
-    <a href="logout.php" style="float: right;">Logout</a>
+    
 
     <table border="1">
         <tr>
@@ -60,6 +60,8 @@ $result = $user->getUsers();
         $db->close();
         ?>
     </table>
+
+    <a href="logout.php" style="float: left;">Logout</a>
 </body>
 
 </html>
