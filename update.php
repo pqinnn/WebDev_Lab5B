@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check the result and provide feedback
     if ($result === true) {
         // Update successful, redirect to display page
-        echo '<script>alert("Update Successful! Redirecting to display page...");</script>';
+        echo '<script>alert("Update Successful!");</script>';
         echo '<script>window.location.href="display.php";</script>';
     } else {
         // Display an error message if the update fails

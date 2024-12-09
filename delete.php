@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     // Check the result and provide feedback
     if ($result === true) {
         // Deletion successful, redirect to display page
-        echo '<script>alert("Delete Successful! Redirecting to display page...");</script>';
+        echo '<script>alert("Delete Successful!");</script>';
         echo '<script>window.location.href="display.php";</script>';
     } else {
         // Deletion failed, display the error
